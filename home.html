@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<title>Pepe University</title>
+</head>
+<body>
+
+<!-- nav -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="home.html">Pepe</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="service.html">Programs</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="row">
+	<div class="col-sm-10">
+		<div class="jumbotron">
+  <h1 class="display-3">Welcome to Pepe University!</h1>	
+  <p style="text-indent: 50px;">Here in Pepe University. </p>
+  <hr class="my-4">
+
+  <!-- caro -->
+<div  style="max-width: 1100px"  >
+    	
+        <img class="mySlides" src="img/pepemain.jpeg" alt="pic1" style="width:100%;">
+        <img class="mySlides" src="img/pepemain2.jpeg" alt="pic2" style="width:100%;">
+        <img class="mySlides" src="img/pepemain3.jpeg" alt="pic3" style="width:100%;">
+      </div>
+
+      <script type="text/javascript">
+      	var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+      </script>
+
+		</div><!-- end of jumbo -->
+	</div>
+
+
+
+
+	<!-- side content -->
+	<div class="col-sm-2">
+		<div class="card mb-3">
+  <h3 class="card-header">News</h3>
+  <div class="card-body">
+    <h5 class="card-title">OUTSTANDING STUDENT:</h5>
+    <h6 class="card-subtitle text-muted">Pepe the Frog</h6>
+  </div>
+  <img style="height: 200px; width: 100%; display: block;" src="img/pepe.png" alt="passer">
+  <div class="card-body">
+    <p class="card-text"> -From the School of Information Technology</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><a href="#">this news</a></li>
+    <li class="list-group-item"><a href="#">some news</a></li>
+    <li class="list-group-item"><a href="#">other news</a></li>
+  </ul>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Contact us here:</h4>
+   
+    <a href="https://www.facebook.com/" class="card-link" target="_blank">Facebook</a>
+    <a href="https://twitter.com/?lang=en" class="card-link" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/?hl=en" class="card-link" target="_blank">Instagram</a>
+  </div>
+</div>
+
+	</div><!-- end of side content -->
+</div><!-- end of row -->
+
+
+
+
+
+<!-- footer -->
+<div class="row">
+	<div class="col-sm-12">
+		<hr class="my-4">
+		<a href="#" class="float-lg-right">back to top</a> social
+		
+	</div>
+</div>
+</body>
+</html>
